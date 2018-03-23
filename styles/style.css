@@ -38,3 +38,9 @@ kbd {
   display: block;
   font-size: 40px;
 }
+.sound {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: green;
+}
