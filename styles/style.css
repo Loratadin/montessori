@@ -44,3 +44,8 @@ kbd {
   letter-spacing: 3px;
   color: green;
 }
+.playing {
+  transform: scale(1.1);
+  border-color: #4ae9f7;
+  box-shadow: 0 0 5px #4ae9f7;
+}
