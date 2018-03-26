@@ -28,22 +28,62 @@
   font-size: 14px;
   transition: all 0.07s ease;
   width: 17%;
-  height: 100px;
+  height: 300px;
   text-align: center;
   color: red;
-  background: yellow;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.letter-a {
+  background-image: url('../images/apple.jpg');
+}
+
+.letter-s {
+  background-image: url('../images/strawberry.jpg');
+}
+
+.letter-d {
+  background-image: url('../images/dog.jpg');
+}
+
+.letter-f {
+  background-image: url('../images/fish.jpg');
+}
+
+.letter-g {
+  background-image: url('../images/grape.jpg');
+}
+
+.letter-h {
+  background-image: url('../images/house.jpg');
+}
+
+.letter-j {
+  background-image: url('../images/jellyfish.jpg');
+}
+
+.letter-k {
+  background-image: url('../images/key.jpg');
+}
+
+.letter-l {
+  background-image: url('../images/ladybug.jpg');
+}
+
 kbd {
   display: block;
   font-size: 40px;
 }
+
 .sound {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: green;
+  color: black;
 }
+
 .playing {
   transform: scale(1.1);
   border-color: #4ae9f7;
