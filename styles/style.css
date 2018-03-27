@@ -145,4 +145,12 @@ kbd {
   /* depends on the height of the clock hands */
 }
 
+.hand {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 6px;
+  background: white;
+}
+
 /* /clock */
