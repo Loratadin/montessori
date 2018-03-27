@@ -4,6 +4,8 @@
   font-family: Josefin Slab, serif;
 }
 
+/* letters */
+
 .letters-wrap {
   position: relative;
   width: 100%;
@@ -99,3 +101,18 @@ kbd {
   border-color: #4ae9f7;
   box-shadow: 0 0 10px #4ae9f7;
 }
+
+/* /letters */
+
+/* clock */
+
+.clock-wrapper {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/clock-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* /clock */
