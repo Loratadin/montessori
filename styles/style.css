@@ -151,6 +151,19 @@ kbd {
   width: 50%;
   height: 6px;
   background: #f9ea6b;
+  transform-origin: 100%;
+  /* to rotate from the very right end, not from the middle as in defolt */
+  transform: rotate(90deg);
+  /* to place it on 12 o'clock */
+  transition: all 0.05s;
+}
+
+.second-hand {
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 2.48);
+}
+
+.min-hand {
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 2.48);
 }
 
 /* /clock */
