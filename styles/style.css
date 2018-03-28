@@ -4,6 +4,10 @@
   font-family: Josefin Slab, serif;
 }
 
+.body {
+  overflow-x: hidden;
+}
+
 /* letters */
 
 .letters-wrap {
@@ -180,11 +184,36 @@ kbd {
   background-size: cover;
 }
 
-.words {
+.color-change .words {
   position: absolute;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 60px;
   color: #b70f0f;
+}
+
+.color-change .word-1 {
+  top: 30%;
+  right: 5%;
+}
+
+.color-change .word-2 {
+  top: 15%;
+  left: 60%;
+}
+
+.color-change .word-3 {
+  top: 45%;
+  left: 10%;
+}
+
+.color-change .word-4 {
+  bottom: 15%;
+  left: 17%;
+}
+
+.color-change .word-5 {
+  bottom: 25%;
+  left: 36%;
 }
 
 /* /color-change */
