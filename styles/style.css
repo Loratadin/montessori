@@ -243,3 +243,13 @@ input {
 }
 
 /* /color-change */
+
+/* gallery */
+
+.gallery {
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* /gallery */
