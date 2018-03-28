@@ -197,7 +197,7 @@ kbd {
 }
 
 .color-change .word-2 {
-  top: 15%;
+  top: 40%;
   left: 60%;
 }
 
@@ -214,6 +214,25 @@ kbd {
 .color-change .word-5 {
   bottom: 25%;
   left: 36%;
+}
+
+.control {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+label {
+  font-size: 60px;
+  color: #4d4d4d;
+  padding-right: 20px;
+}
+
+input {
+  width: 200px;
 }
 
 /* /color-change */
