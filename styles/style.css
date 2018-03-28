@@ -175,7 +175,8 @@ kbd {
 /* color-change */
 
 :root {
-  --base: #b70f0f;
+  --base: #58b7a8;
+  /* declare variable on root or any other element */
 }
 
 .color-change {
@@ -236,7 +237,9 @@ label {
 }
 
 input {
-  width: 200px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 /* /color-change */
