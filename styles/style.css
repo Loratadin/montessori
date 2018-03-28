@@ -273,4 +273,24 @@ input {
   background-position: center;
 }
 
+.panel1 {
+  background-image: src("../images/panel1.jpg")
+}
+
+.panel2 {
+  background-image: src("../images/panel2.jpg")
+}
+
+.panel3 {
+  background-image: src("../images/panel3.jpg")
+}
+
+.panel4 {
+  background-image: src("../images/panel4.jpg")
+}
+
+.panel5 {
+  background-image: src("../images/panel5.jpg")
+}
+
 /* /gallery */
