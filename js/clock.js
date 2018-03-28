@@ -7,10 +7,11 @@ function setDate() {
  const secondsDegrees = ((seconds / 60) * 360) + 90; // + 90 because we set it to 90 deg in css
  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
  const minutes = now.getMinutes();
- const minutesDegrees = ((minutes / 60) * 360) + ((seconds/60)*6) + 90;
+ const minutesDegrees = ((minutes / 60) * 360) + 90;
  minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
  const hours = now.getHours();
- const hoursDegrees = ((hours / 12) * 360) + ((seconds/60)*6) + 90;
+ const hoursDegrees = ((hours / 12) * 360) + 90;
  hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 setInterval(setDate, 1000);
+setDate();
