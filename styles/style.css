@@ -266,7 +266,6 @@ input {
   /* flex children */
   margin: 0;
   width: 100%;
-  border: 1px solid red;
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
@@ -277,8 +276,16 @@ input {
   transform: translateY(-100%);
 }
 
+.panel.open-active>*:first-child {
+  transform: translateY(0);
+}
+
 .panel>*:last-child {
   transform: translateY(100%);
+}
+
+.panel.open-active>*:last-child {
+  transform: translateY(0);
 }
 
 .panel p {
