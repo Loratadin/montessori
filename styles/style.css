@@ -248,10 +248,8 @@ input {
 
 .gallery {
   width: 100%;
-  height: 900px;
   min-height: 100vh;
   font-family: 'helvetica neue';
-  font-size: 20px;
   font-weight: 200;
   box-sizing: border-box;
 }
@@ -291,13 +289,14 @@ input {
 .panel p {
   text-transform: uppercase;
   font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 }
 
 .panel {
   /* it's both flex child and flex parent */
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
-  font-size: 30px;
+  font-size: 37px;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -312,13 +311,12 @@ input {
 }
 
 .panel p:nth-child(2) {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 .panel.open {
   flex: 5;
   /* it takes 5 times more extra room than other panels */
-  font-size: 70px;
 }
 
 .panel1 {
