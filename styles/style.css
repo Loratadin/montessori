@@ -304,6 +304,7 @@ input {
   align-items: center;
   display: flex;
   flex: 1;
+  /* panels share extra room equaly among themselves*/
   justify-content: center;
   /* centered left to right */
   flex-direction: column;
@@ -311,6 +312,12 @@ input {
 
 .panel p:nth-child(2) {
   font-size: 55px;
+}
+
+.panel.open {
+  flex: 5;
+  /* it takes 5 times more extra room than other panels */
+  font-size: 70px;
 }
 
 .panel1 {
