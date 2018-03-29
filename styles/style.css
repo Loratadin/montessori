@@ -263,8 +263,10 @@ input {
 }
 
 .panel>* {
+  /* flex children */
   margin: 0;
   width: 100%;
+  border: 1px solid red;
 }
 
 .panel p {
@@ -273,12 +275,23 @@ input {
 }
 
 .panel {
+  /* it's both flex child and flex parent */
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
   font-size: 20px;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
   flex: 1;
+  justify-content: center;
+  /* centered left to right */
+  flex-direction: column;
+}
+
+.panel p:nth-child(2) {
+  font-size: 40px;
 }
 
 .panel1 {
