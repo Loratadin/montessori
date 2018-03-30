@@ -340,3 +340,16 @@ input {
 }
 
 /* /gallery */
+
+/* search-locations */
+
+.search-locations {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/search-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* s/earch-locations */
