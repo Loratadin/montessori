@@ -411,4 +411,8 @@ input.search {
   background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
 }
 
+.hl {
+  background: #b28ece;
+}
+
 /* /search-locations */
