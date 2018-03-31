@@ -342,6 +342,28 @@ input {
 
 /* /gallery */
 
+/* text section */
+
+.text-section {
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #666;
+  padding: 150px;
+}
+
+.text-section p {
+  padding: 40px 150px 0 150px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.text-section h2 {
+  padding: 100px auto 0 auto;
+}
+
+/* /text section */
+
 /* search-locations */
 
 .search-locations {
