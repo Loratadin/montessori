@@ -344,6 +344,7 @@ input {
 /* search-locations */
 
 .search-locations {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   background-image: url("../images/search-bg.jpg");
@@ -351,42 +352,39 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   font-size: 20px;
-  box-sizing: border-box;
 }
 
 form .search-form {
-  max-width: 400px;
-  margin: 50px auto;
-  box-sizing: inherit;
+  position: relative;
+  width: 100%;
 }
 
 input {
-  width: 100%;
+  position: absolute;
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: inherit;
 }
 
 input.search {
-  box-sizing: inherit;
+  position: absolute;
+  top: 20%;
   text-align: center;
   outline: 0;
   border: 10px solid #F7F7F7;
-  width: 120%;
-  left: -10%;
-  position: relative;
-  top: 10px;
-  z-index: 2;
   border-radius: 5px;
   font-size: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
 
 .suggestions {
-  position: relative;
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
   /*perspective:20px;*/
 }
 
 .suggestions li {
+  width: 300px;
   background: white;
   list-style: none;
   border-bottom: 1px solid #D8D8D8;
