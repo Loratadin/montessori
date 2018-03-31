@@ -353,6 +353,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   font-size: 20px;
+  overflow: hidden;
 }
 
 .search-form {
