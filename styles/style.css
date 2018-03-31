@@ -4,8 +4,8 @@
   font-family: Josefin Slab, serif;
 }
 
-.body {
-  overflow-x: hidden;
+body {
+  /* overflow-x: hidden; */
 }
 
 /* letters */
@@ -187,6 +187,7 @@ kbd {
   background-image: url("../images/color-change-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .color-change .words {
@@ -361,14 +362,16 @@ input {
 }
 
 input {
+  margin: 0;
   padding: 20px;
 }
 
 input.search {
   position: absolute;
   top: 20%;
-  width: 350px;
-  margin: 0 auto;
+  left: 18%;
+  width: 60%;
+  margin: 0;
   text-align: center;
   outline: 0;
   border: 10px solid #F7F7F7;
@@ -380,7 +383,7 @@ input.search {
 .suggestions {
   position: absolute;
   top: 48%;
-  margin: 0 auto;
+  left: 36%;
   /*perspective:20px;*/
 }
 
