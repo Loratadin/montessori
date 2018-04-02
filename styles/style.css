@@ -35,6 +35,15 @@ header video {
   min-width: 100%;
 }
 
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #b28ece;
+  opacity: 0.85;
 }
 
 /* /v-header */
