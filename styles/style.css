@@ -21,6 +21,15 @@
   text-align: center;
 }
 
+.fullscreen-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* /v-header */
 
 /* letters */
