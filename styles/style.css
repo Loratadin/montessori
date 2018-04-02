@@ -46,6 +46,15 @@ header video {
   opacity: 0.85;
 }
 
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
 /* /v-header */
 
 /* letters */
