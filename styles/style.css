@@ -15,6 +15,12 @@
   color: #fff;
 }
 
+.v-text-container {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
 /* /v-header */
 
 /* letters */
