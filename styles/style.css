@@ -4,9 +4,18 @@
   font-family: Josefin Slab, serif;
 }
 
-body {
-  /* overflow-x: hidden; */
+/* v-header */
+
+.v-header {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
+
+/* /v-header */
 
 /* letters */
 
