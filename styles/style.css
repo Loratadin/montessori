@@ -30,6 +30,13 @@
   overflow: hidden;
 }
 
+header video {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+}
+
 /* /v-header */
 
 /* letters */
