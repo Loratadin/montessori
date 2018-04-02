@@ -55,6 +55,21 @@ header video {
   margin-bottom: 0;
 }
 
+.header-content p {
+  font-size: 20px;
+  display: block;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.btn {
+  background: #58b7a8;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
 /* /v-header */
 
 /* letters */
