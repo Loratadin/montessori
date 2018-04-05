@@ -551,6 +551,7 @@ input.search {
 
 /* footer */
 .footer {
+  position: relative;
   width: 100%;
   height: 400px;
   background-image: url("../images/footer-bg.jpg");
@@ -570,10 +571,10 @@ input.search {
 .spider:before {
   display: block;
   content: "";
-  width: 1px;
+  width: 2px;
   height: 50px;
   background: #efebe4;
-  margin-left: 24px;
+  margin-left: 44px;
   margin-bottom: -3px;
   animation: spider-move 4s ease-in-out infinite alternate;
 }
