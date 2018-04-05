@@ -548,3 +548,34 @@ input.search {
 }
 
 /* /search-locations */
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.spider {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  margin-left: -22px;
+  width: 45px;
+  height: 45px;
+}
+.spider:before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #efebe4;
+  margin-left: 24px;
+  margin-bottom: -3px;
+  animation: spider-move 4s ease-in-out infinite alternate;
+}
+
+/* /footer */
