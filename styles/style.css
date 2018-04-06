@@ -612,7 +612,7 @@ input.search {
 .socials {
   position: absolute;
   top: 10%;
-  right: 20%;
+  right: 18%;
   text-align: center;
   width: 50px;
 }
@@ -623,6 +623,9 @@ input.search {
   cursor: pointer;
   width: 40px;
   height: 40px;
+}
+.footer-icon {
+  width: 100%;
 }
 
 .socials-item:hover .footer-icon 
