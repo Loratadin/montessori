@@ -627,6 +627,38 @@ input.search {
 .footer-icon {
   width: 100%;
 }
+.youtube,
+.pinterest,
+.facebook,
+.twitter {
+  position: relative;
+}
+.youtube::after,
+.pinterest::after,
+.facebook::after,
+.twitter::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.youtube::after {
+  background-image: url("../images/youtube-overlay.png");
+}
+.pinterest::after {
+  background-image: url("../images/pinterest-overlay.png");
+}
+.facebook::after {
+  background-image: url("../images/facebook-overlay.png");
+}
+.twitter::after {
+  background-image: url("../images/twitter-overlay.png");
+}
 
 .socials-item:hover .footer-icon 
 
