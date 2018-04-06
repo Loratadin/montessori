@@ -660,6 +660,8 @@ input.search {
   background-image: url("../images/twitter-overlay.png");
 }
 
-.socials-item:hover .footer-icon 
+.youtube:hover .youtube::after {
+  opacity: 1;
+}
 
-/* /footer */;;
+/* /footer */
