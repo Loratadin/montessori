@@ -661,7 +661,10 @@ input.search {
   background-image: url("../images/twitter-overlay.png");
 }
 
-.youtube:hover:after {
+.youtube:hover:after,
+.pinterest:hover:after,
+.facebook:hover:after,
+.twitter:hover:after {
   opacity: 1;
 }
 .form-wrapper {
