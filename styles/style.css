@@ -609,5 +609,22 @@ input.search {
     height: 150px;
   }
 }
+.socials {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  text-align: center;
+  width: 50px;
+}
 
-/* /footer */
+.socials-item {
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.socials-item:hover .footer-icon 
+
+/* /footer */;;
