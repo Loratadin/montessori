@@ -20,6 +20,83 @@
   margin: auto;
   text-align: center;
 }
+/* Hamburger Menu */
+
+.hamburger-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hamburger {
+  position: absolute;
+  margin-top: 6%;
+  right: 9%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+  background-color: white;
+  transform: translateY(10px) rotate(45deg);
+  -o-transition: translateY(10px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+  background-color: white;
+  transform: translateY(-10px) rotate(-45deg);
+  -o-transition: translateY(-10px) rotate(-45deg);
+}
+
+/* /Hamburger Menu */
+
+/* Menu Takeover */
+
+.menu-takeover {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #58b7a8;
+}
+
+.menu-content {
+  position: absolute;
+  top: 20%;
+  left: 21%;
+  list-style-type: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu-component {
+  border-bottom: 1px dotted #fff;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+.menu-component:hover {
+  opacity: 0.7;
+}
+
+/* /Menu Takeover */
 
 .fullscreen-video-wrapper {
   position: absolute;
