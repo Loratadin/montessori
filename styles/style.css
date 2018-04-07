@@ -281,7 +281,7 @@ kbd {
 
 /* color-change */
 
-:root {
+.color-change {
   --base: #58b7a8;
   /* declare variable on root or any other element */
 }
@@ -344,7 +344,7 @@ label {
   padding-right: 20px;
 }
 
-input {
+.input-color {
   width: 100px;
   height: 100px;
   cursor: pointer;
@@ -493,12 +493,9 @@ input {
   min-height: 100vh;
 }
 
-input {
+.input-search {
   margin: 0;
   padding: 20px;
-}
-
-input.search {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -673,6 +670,7 @@ input.search {
   background: rgba(106, 178, 252, 0.5);
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 9px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -698,9 +696,14 @@ input.search {
 
 .subscribe-button {
   background: #bf72d5;
+  box-sizing: border-box;
   border: 0;
+  width: 100%;
   height: 33px;
   cursor: pointer;
+  font-size: 16px;
+  padding-bottom: 27px;
+  padding-top: 10px;
   color: #3e3d3d;
 }
 .subscribe-button:hover {
