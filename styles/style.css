@@ -27,7 +27,7 @@
   top: 6%;
   right: 9%;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 
 .hamburger .line {
@@ -46,13 +46,13 @@
 
 .hamburger.is-active .line:nth-child(1) {
   background-color: white;
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
   -o-transition: translateY(10px) rotate(45deg);
 }
 
 .hamburger.is-active .line:nth-child(3) {
   background-color: white;
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
   -o-transition: translateY(-10px) rotate(-45deg);
 }
 
@@ -67,14 +67,15 @@
   right: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 3;
   background-color: #58b7a8;
 }
 
 .menu-content {
   position: absolute;
   top: 20%;
-  left: 21%;
+  left: 50%;
+  transform: translateX(-50%);
   list-style-type: none;
   font-size: 24px;
   color: #fff;
@@ -622,7 +623,7 @@ label {
   content: "";
   width: 1px;
   height: 150px;
-  background: #efebe4;
+  background: #fff;
   margin-left: 45px;
   margin-bottom: -3px;
   animation: spider-move 4s ease-in-out infinite alternate;
