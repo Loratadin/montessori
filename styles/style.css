@@ -90,13 +90,34 @@
 .menu-component:hover {
   opacity: 0.7;
 }
-.crab {
-  display: block;
+.crab-container {
   position: absolute;
   top: 80%;
-  left: 1%;
-  width: 45px;
-  height: 45px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+}
+.crab {
+  float: left;
+  width: 90px;
+  height: 90px;
+}
+.crab-icon {
+  width: 100%;
+}
+.crab-shifter {
+  float: left;
+  width: 1%;
+  height: 90px;
+  animation: crab-move 8s cubic-bezier(0, 0.18, 0.33, 1.11) infinite alternate;
+}
+@keyframes crab-move {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 70%;
+  }
 }
 /* /Menu Takeover */
 
