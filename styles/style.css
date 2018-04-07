@@ -716,3 +716,17 @@ label {
 }
 
 /* /footer */
+
+/* Media Queries*/
+
+@media /* medium */ (min-width: 451px) {
+  /* v-header */
+}
+
+@media /* large */ (min-width: 769px) {
+  /* v-header */
+}
+
+@media /* extra-large */ (min-width: 1025px) {
+  /* v-header */
+}
