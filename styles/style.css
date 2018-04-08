@@ -77,13 +77,14 @@
   left: 50%;
   transform: translateX(-50%);
   list-style-type: none;
-  font-size: 24px;
   color: #fff;
 }
 
 .menu-component {
   border-bottom: 1px dotted #fff;
-  padding: 20px 5px;
+  padding: 15px 5px;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -514,12 +515,14 @@ label {
   text-align: center;
   background-color: #f4f4f4;
   color: #666;
-  padding: 150px;
+  padding: 4%;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .text-section p {
-  padding: 40px 150px 0 150px;
-  margin: 0 auto;
+  margin: 4% auto;
   font-size: 20px;
   line-height: 35px;
 }
@@ -779,10 +782,19 @@ label {
 
 @media /* medium */ (min-width: 451px) {
   /* v-header */
+  .menu-component {
+    padding: 10px 5px;
+    font-size: 32px;
 }
 
 @media /* large */ (min-width: 769px) {
   /* v-header */
+  .hamburger-menu {
+    display: none;
+  }
+  .menu-takeover *{
+    display: none;
+  }
   .navbar {
     box-sizing: border-box;
     width: 100%;
