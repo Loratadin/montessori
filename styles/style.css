@@ -370,8 +370,7 @@ kbd {
 .color-change {
   position: relative;
   width: 100%;
-  height: 900px;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../images/color-change-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -381,18 +380,18 @@ kbd {
 .color-change .words {
   position: absolute;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 24px;
   color: var(--base);
 }
 
 .color-change .word-1 {
-  top: 30%;
+  top: 33%;
   right: 5%;
 }
 
 .color-change .word-2 {
   top: 40%;
-  left: 60%;
+  left: 51%;
 }
 
 .color-change .word-3 {
@@ -412,22 +411,32 @@ kbd {
 
 .control {
   position: absolute;
-  top: 15%;
+  top: 10%;
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 20px;
+}
+
+.owl {
+  width: 40px;
+  height: 40px;
+}
+
+.owl img {
+  width: 100%;
 }
 
 label {
-  font-size: 60px;
+  font-size: 18px;
   color: #4d4d4d;
-  padding-right: 20px;
+  box-sizing: border-box;
+  padding: 0 7px;
 }
 
 .input-color {
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -834,6 +843,26 @@ label {
     height: 200px;
     border: 15px solid #f9ea6b;
   }
+  /* section with words */
+  .color-change .words {
+    font-size: 30px;
+  }
+  .control {
+    top: 12%;
+    padding-left: 25px;
+  }
+  label {
+    font-size: 30px;
+    padding-right: 13px;
+  }
+  .input-color {
+    width: 50px;
+    height: 50px;
+  }
+  .owl {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 @media
@@ -902,6 +931,26 @@ label {
     height: 300px;
     border: 20px solid #f9ea6b;
   }
+  /* section with words */
+  .color-change .words {
+    font-size: 46px;
+  }
+  .control {
+    top: 14%;
+    padding-left: 45px;
+  }
+  label {
+    font-size: 46px;
+    padding-right: 16px;
+  }
+  .input-color {
+    width: 70px;
+    height: 70px;
+  }
+  .owl {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 @media
@@ -926,5 +975,25 @@ label {
   .key {
     margin: 80px 40px;
     width: 13%;
+  }
+  /* section with words */
+  .color-change .words {
+    font-size: 60px;
+  }
+  .control {
+    top: 15%;
+    padding-left: 50px;
+  }
+  label {
+    font-size: 60px;
+    padding-right: 20px;
+  }
+  .input-color {
+    width: 100px;
+    height: 100px;
+  }
+  .owl {
+    width: 90px;
+    height: 90px;
   }
 }
