@@ -574,7 +574,7 @@ label {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-size: 20px;
+  font-size: 12px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -587,35 +587,35 @@ label {
 
 .input-search {
   margin: 0;
-  padding: 20px;
+  padding: 7px;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 60%;
+  width: 70%;
   text-align: center;
   outline: 0;
-  border: 10px solid #f7f7f7;
+  border: 2px solid #f7f7f7;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
 
 .suggestions {
   position: absolute;
-  top: 48%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   /*perspective:20px;*/
 }
 
 .suggestions li {
-  width: 300px;
+  width: 100px;
   background: white;
   list-style: none;
   border-bottom: 1px solid #d8d8d8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-  padding: 20px;
+  padding: 7px;
   transition: background 0.2s;
   display: flex;
   justify-content: space-between;
@@ -871,6 +871,24 @@ label {
   .panel p:nth-child(2) {
     font-size: 45px;
   }
+  /* section with locations search */
+  .search-locations {
+    font-size: 14px;
+  }
+  .input-search {
+    padding: 14px;
+    border: 4px solid #f7f7f7;
+    font-size: 14px;
+    width: 60%;
+  }
+  .suggestions {
+    top: 37%;
+    /*perspective:20px;*/
+  }
+  .suggestions li {
+    width: 170px;
+    padding: 14px;
+  }
 }
 
 @media
@@ -970,6 +988,23 @@ label {
   .text-section p {
     padding: 0 50px;
   }
+  /* section with locations search */
+  .search-locations {
+    font-size: 16px;
+  }
+  .input-search {
+    padding: 16px;
+    border: 6px solid #f7f7f7;
+    font-size: 16px;
+  }
+  .suggestions {
+    top: 42%;
+    /*perspective:20px;*/
+  }
+  .suggestions li {
+    width: 230px;
+    padding: 16px;
+  }
 }
 
 @media
@@ -1025,5 +1060,22 @@ label {
   /* section with text */
   .text-section p {
     max-width: 900px;
+  }
+  /* section with locations search */
+  .search-locations {
+    font-size: 20px;
+  }
+  .input-search {
+    padding: 20px;
+    border: 10px solid #f7f7f7;
+    font-size: 30px;
+  }
+  .suggestions {
+    top: 48%;
+    /*perspective:20px;*/
+  }
+  .suggestions li {
+    width: 300px;
+    padding: 20px;
   }
 }
