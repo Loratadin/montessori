@@ -494,7 +494,7 @@ label {
   /* it's both flex child and flex parent */
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
-  font-size: 37px;
+  font-size: 16px;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -509,7 +509,7 @@ label {
 }
 
 .panel p:nth-child(2) {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .panel.open {
@@ -863,6 +863,13 @@ label {
     width: 55px;
     height: 55px;
   }
+  /* section with gallery */
+  .panel {
+    font-size: 24px;
+  }
+  .panel p:nth-child(2) {
+    font-size: 45px;
+  }
 }
 
 @media
@@ -951,6 +958,13 @@ label {
     width: 65px;
     height: 65px;
   }
+  /* section with gallery */
+  .panel {
+    font-size: 30px;
+  }
+  .panel p:nth-child(2) {
+    font-size: 50px;
+  }
 }
 
 @media
@@ -995,5 +1009,12 @@ label {
   .owl {
     width: 90px;
     height: 90px;
+  }
+  /* section with gallery */
+  .panel {
+    font-size: 37px;
+  }
+  .panel p:nth-child(2) {
+    font-size: 60px;
   }
 }
