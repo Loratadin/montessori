@@ -552,6 +552,7 @@ label {
 }
 
 .text-section p {
+  box-sizing: border-box;
   margin: 4% auto;
   font-size: 20px;
   line-height: 35px;
@@ -965,6 +966,10 @@ label {
   .panel p:nth-child(2) {
     font-size: 50px;
   }
+  /* section with text */
+  .text-section p {
+    padding: 0 50px;
+  }
 }
 
 @media
@@ -1016,5 +1021,9 @@ label {
   }
   .panel p:nth-child(2) {
     font-size: 60px;
+  }
+  /* section with text */
+  .text-section p {
+    max-width: 900px;
   }
 }
