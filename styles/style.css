@@ -2,6 +2,7 @@
 TODO: Import fonts from google Font 
 usually this is putted in top of the css files
 */
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +72,7 @@ usually this is putted in top of the css files
 }
 
 /* TODO: refactor with CSS classes */
+
 header video {
   position: absolute;
   top: 50%;
@@ -172,6 +174,11 @@ header video {
 
 .menu-component:hover {
   opacity: 0.7;
+}
+
+.menu-component-link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .crab-container {
@@ -991,6 +998,11 @@ label {
   }
   .nav-item:hover:after {
     opacity: 1;
+  }
+  .nav-item-link {
+    color: inherit;
+    text-decoration: inherit;
+    /* no underline */
   }
   .header-content h1 {
     font-size: 32px;
