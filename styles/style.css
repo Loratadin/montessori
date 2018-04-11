@@ -1,7 +1,13 @@
+/* 
+TODO: Import fonts from google Font 
+usually this is putted in top of the css files
+*/
 * {
   margin: 0;
   padding: 0;
+  /* TODO: Move font family declaration into the body */
   font-family: Josefin Slab, serif;
+  /* TODO: Add box-sizing: border box for all elements */
 }
 
 /* v-header */
@@ -15,10 +21,15 @@
 }
 
 .header-content {
+  /* TODO: remove all border boxes since they should be defined for all elements */
   box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
+  /* 
+    TODO: in this case one transform will override another one.
+    In order to use multiple transforms use transform: translate3D(...);
+  */
   transform: translateY(-50%);
   transform: translateX(-50%);
   z-index: 2;
@@ -59,6 +70,7 @@
   bottom: 0;
 }
 
+/* TODO: refactor with CSS classes */
 header video {
   position: absolute;
   top: 50%;
@@ -100,6 +112,7 @@ header video {
   background-color: #fff;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
+  /* TODO: Do we need this vendor prefix? */
   -o-transition: all 0.3s ease-in-out;
 }
 
@@ -110,12 +123,14 @@ header video {
 .hamburger.is-active .line:nth-child(1) {
   background-color: white;
   transform: translateY(7px) rotate(45deg);
+  /* TODO: Do we need this vendor prefix? */
   -o-transition: translateY(10px) rotate(45deg);
 }
 
 .hamburger.is-active .line:nth-child(3) {
   background-color: white;
   transform: translateY(-7px) rotate(-45deg);
+  /* TODO: Do we need this vendor prefix? */
   -o-transition: translateY(-10px) rotate(-45deg);
 }
 
@@ -146,6 +161,10 @@ header video {
 .menu-component {
   border-bottom: 1px dotted #fff;
   padding: 15px 5px;
+  /* 
+    TODO: In order to be able to use this font you need to import it.
+    The same story as with original one imported in the body.
+   */
   font-family: "Amatic SC", cursive;
   font-size: 30px;
   cursor: pointer;
@@ -175,6 +194,7 @@ header video {
 
 .crab-shifter {
   float: left;
+  /* TODO: is it possible to move this 1% into the static value in pixels? If no, let's leave as is. */
   width: 1%;
   height: 90px;
   animation: crab-move 8s cubic-bezier(0, 0.18, 0.33, 1.11) infinite alternate;
@@ -199,6 +219,11 @@ header video {
   position: relative;
   width: 100%;
   height: auto;
+  /* 
+    TODO: 
+    Please refactor this with background shorthand property 
+    https://www.w3schools.com/css/css_background.asp
+    */
   background-image: url("../images/letters-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,6 +236,10 @@ header video {
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
+  /* 
+  TODO:
+  Refactor this part. There're some unnecessary css properties.
+    */
   margin: 0 auto;
   width: 100%;
   color: #3e3d3d;
@@ -227,6 +256,7 @@ header video {
 }
 
 .key {
+  /* TODO: refactor colors with their value */
   border: 2px solid white;
   border-radius: 4px;
   margin: 40px 40px;
@@ -344,7 +374,7 @@ kbd {
   height: 3px;
   background: #f9ea6b;
   transform-origin: 100%;
-  /* to rotate from the very right end, not from the middle as in defolt */
+  /* to rotate from the very right end, not from the middle as in default */
   transform: rotate(90deg);
   /* to place it on 12 o'clock */
   transition: all 0.05s;
@@ -447,6 +477,7 @@ label {
 .gallery {
   width: 100%;
   min-height: 100vh;
+  /* TODO: fonts... */
   font-family: "helvetica neue";
   font-weight: 200;
   box-sizing: border-box;
@@ -486,6 +517,7 @@ label {
 
 .panel p {
   text-transform: uppercase;
+  /* TODO: fonts... */
   font-family: "Amatic SC", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 }
@@ -932,6 +964,7 @@ label {
     z-index: 2;
   }
   .nav-item {
+    /* TODO: add letter spacing for better reading */
     position: relative;
     list-style-type: none;
     display: inline-block;
@@ -948,6 +981,7 @@ label {
     position: absolute;
     left: 10%;
     right: 10%;
+    /* TODO: Refactor with px value */
     top: 88%;
     height: 2px;
     background-color: white;
