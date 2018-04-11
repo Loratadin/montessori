@@ -1,14 +1,13 @@
-/* 
-TODO: Import fonts from google Font 
-usually this is putted in top of the css files
-*/
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab');
 * {
   margin: 0;
   padding: 0;
-  /* TODO: Move font family declaration into the body */
+  box-sizing: border-box;
+}
+
+body {
   font-family: Josefin Slab, serif;
-  /* TODO: Add box-sizing: border box for all elements */
 }
 
 /* v-header */
