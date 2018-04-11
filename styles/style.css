@@ -946,12 +946,11 @@ label {
   .nav-item:after {
     content: "";
     position: absolute;
-    left: 56%;
+    left: 10%;
+    right: 10%;
     top: 88%;
-    width: 75%;
     height: 2px;
     background-color: white;
-    transform: translate3d(-50%, -50%, 0);
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
