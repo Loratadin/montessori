@@ -365,7 +365,7 @@ kbd {
 
 /* section with color-change */
 
-.color-change {
+.color-change <* {
   --base: #58b7a8;
   /* declare variable on root or any other element */
 }
