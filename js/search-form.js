@@ -25,7 +25,7 @@ const html = matchArray.map(place => {
 }).join('');
 suggestions.innerHTML = html;
 }
-const searchInput = document.querySelector('.search');
+const searchInput = document.querySelector('.input-search');
 const suggestions = document.querySelector('.suggestions');
 
 searchInput.addEventListener('change', displayMatches);
