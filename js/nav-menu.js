@@ -11,4 +11,4 @@ var  nav = document.getElementById('nav');
       		nav.style.background = "transparent";
       		nav.style.boxShadow = "none";
       	}
-      }
+	}

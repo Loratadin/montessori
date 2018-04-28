@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab');
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab");
 * {
   margin: 0;
   padding: 0;
@@ -329,7 +329,8 @@ kbd {
   border-radius: 50%;
   margin: 0 auto;
   padding: 12px;
-  box-shadow: 0 0 0 4px rgba(183, 15, 15, 0.14), inset 0 0 0 3px #f9ea6b, inset 0 0 10px #b70f0f, 0 0 10px rgba(183, 15, 15, 0.14);
+  box-shadow: 0 0 0 4px rgba(183, 15, 15, 0.14), inset 0 0 0 3px #f9ea6b,
+    inset 0 0 10px #b70f0f, 0 0 10px rgba(183, 15, 15, 0.14);
 }
 
 .clock-face {
@@ -457,7 +458,7 @@ label {
   display: flex;
 }
 
-.panel>* {
+.panel > * {
   /* flex children */
   margin: 0;
   width: 100%;
@@ -467,19 +468,19 @@ label {
   align-items: center;
 }
 
-.panel>*:first-child {
+.panel > *:first-child {
   transform: translateY(-100%);
 }
 
-.panel.open-active>*:first-child {
+.panel.open-active > *:first-child {
   transform: translateY(0);
 }
 
-.panel>*:last-child {
+.panel > *:last-child {
   transform: translateY(100%);
 }
 
-.panel.open-active>*:last-child {
+.panel.open-active > *:last-child {
   transform: translateY(0);
 }
 
@@ -504,7 +505,8 @@ label {
   justify-content: center;
   /* centered left to right */
   flex-direction: column;
-  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
 }
 
 .panel p:nth-child(2) {
@@ -822,10 +824,7 @@ label {
 
 /* Media Queries*/
 
-@media
-/* medium */
-
-(min-width: 451px) {
+@media /* medium */ (min-width: 451px) {
   /* header */
   .menu-component {
     padding: 10px 5px;
@@ -905,12 +904,10 @@ label {
   }
 }
 
-@media
-/* large */
-
-(min-width: 769px) {
+@media /* large */ (min-width: 769px) {
   /* header */
-  .hamburger-menu, .menu-takeover {
+  .hamburger-menu,
+  .menu-takeover {
     display: none;
   }
   .navbar {
@@ -964,6 +961,7 @@ label {
   }
   .btn {
     font-size: 16px;
+    cursor: pointer;
   }
   /* section with letters*/
   .key {
@@ -1049,10 +1047,7 @@ label {
   }
 }
 
-@media
-/* extra-large */
-
-(min-width: 1025px) {
+@media /* extra-large */ (min-width: 1025px) {
   /* header */
   .nav-item {
     padding: 10px 50px;
