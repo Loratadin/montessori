@@ -299,6 +299,12 @@ kbd {
 }
 
 /* /section with letters */
+/* section with canvas */
+.canvas {
+  width: 100vw;
+  height: 100vh;
+}
+/* /section with canvas */
 
 /* section with clock */
 
