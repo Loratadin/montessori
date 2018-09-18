@@ -309,8 +309,6 @@ kbd {
   background-image: url("../images/clock-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  flex: 1;
-  align-items: center;
 }
 
 .clock-wrapper {
