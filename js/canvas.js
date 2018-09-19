@@ -2,7 +2,7 @@ const canvas = document.querySelector('#draw');
 const ctx = canvas.getContext('2d'); //need context for drawing, 3d is used for video games
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-ctx.strokeStyle = '#BADA55';
+// ctx.strokeStyle = '#BADA55';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 7;
@@ -11,10 +11,12 @@ let isDrawing = false;
 
 let lastX = 0;
 let lastY = 0; // declare x and y variables where the line should start
+let hue = 0;
 
 function draw(e) { //function that runs whenever we move the mouse on top of the canvas
     if(!isDrawing) return; //stop the fn from running when they are not moused
     console.log(e);
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     ctx.beginPath();
     //start from
     ctx.moveTo(lastX, lastY);
@@ -24,6 +26,7 @@ function draw(e) { //function that runs whenever we move the mouse on top of the
     // lastX = e.offsetX;
     // lastY = e.offsetY;
     [lastX, lastY] = [e.offsetX, e.offsetY]; //destructuring an array
+    hue++;
 }
  canvas.addEventListener('mousemove', draw);
  canvas.addEventListener('mousedown', (e) => {
