@@ -14,3 +14,6 @@ function draw(e) { //function that runs whenever we move the mouse on top of the
     console.log(e);
 }
  canvas.addEventListener('mousemove', draw);
+ canvas.addEventListener('mousedown', () => isDrawing = true);
+ canvas.addEventListener('mouseup', () => isDrawing = false);
+ canvas.addEventListener('mouseout', () => isDrawing = false);
