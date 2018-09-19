@@ -23,7 +23,10 @@ function draw(e) { //function that runs whenever we move the mouse on top of the
     [lastX, lastY] = [e.offsetX, e.offsetY]; //destructuring an array
 }
  canvas.addEventListener('mousemove', draw);
- 
- canvas.addEventListener('mousedown', () => isDrawing = true);
+ canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY]; //update starting point
+
+ });
  canvas.addEventListener('mouseup', () => isDrawing = false);
  canvas.addEventListener('mouseout', () => isDrawing = false);
