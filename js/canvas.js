@@ -12,8 +12,18 @@ let lastY = 0; // declare x and y variables where the line should start
 function draw(e) { //function that runs whenever we move the mouse on top of the canvas
     if(!isDrawing) return; //stop the fn from running when they are not moused
     console.log(e);
+    ctx.beginPath();
+    //start from
+    ctx.moveTo(lastX, lastY);
+    //go to
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    // lastX = e.offsetX;
+    // lastY = e.offsetY;
+    [lastX, lastY] = [e.offsetX, e.offsetY]; //destructuring an array
 }
  canvas.addEventListener('mousemove', draw);
+ 
  canvas.addEventListener('mousedown', () => isDrawing = true);
  canvas.addEventListener('mouseup', () => isDrawing = false);
  canvas.addEventListener('mouseout', () => isDrawing = false);
